@@ -14,15 +14,15 @@ spec:
           containers:
           - name: sicst-deposit
             image: iuda194/sicst_deposit:prod  # Использование вашего контейнера
-          env:
-          - name: SQL_HOST
-            value: "postgres-svc" # адрес сервиса PostgreSQL
-          - name: SQL_NAME
-            value: "cash_planner"
-          - name: SQL_USER
-            value: "cash"
-          - name: SQL_PORT
-            value: "5432"
-          - name: SQL_PASSWORD
-            value: "1213"
+            env:
+            - name: SQL_HOST
+              value: "postgres-svc" # адрес сервиса PostgreSQL
+            - name: SQL_NAME
+              value: "cash_planner"
+            - name: SQL_USER
+              value: "cash"
+            - name: SQL_PORT
+              value: "5432"
+            - name: SQL_PASSWORD
+              value: "1213"
           restartPolicy: OnFailure  # Перезапуск в случае неудачи
