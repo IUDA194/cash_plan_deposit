@@ -1,30 +1,24 @@
-# Money Manager
+# Daily Balance Deposit Microservice
 
 ![Project Logo](readme_imgs/logo.svg)
 
-Money Manager is an application for managing impulse spending, where clients set a daily limit for their expenses, and any remaining funds can accumulate and be used later.
+This microservice is designed to handle the daily balance deposit functionality for the Money Manager application. It automatically adds a specified daily limit to the user's balance, helping them track their available funds for impulse spending.
 
 ## Features
-- **Daily Limit Setting**: Clients can specify the amount they are willing to spend on impulse purchases each day.
-- **Balance Accumulation**: If a client does not spend their entire limit for the day, the remaining funds accumulate in their balance.
-- **Transactions**: Clients can log their expenses, reducing their current balance.
-- **Example**: If a limit of $5 is set per day and the client does not spend any money for three days, they will have $15 accumulated in their balance.
+- **Daily Deposit**: Automatically deposits a predefined amount to the user's balance each day.
+- **User Management**: Integrates with the Money Manager application to fetch user data and update balances accordingly.
+- **Configuration**: Easily configurable for different daily limits based on user preferences.
 
 ## Technology Stack
 - **Backend**: Python, Django, Django REST Framework
-- **DevOps**: Jenkins, Docker, Kubernetes
-
-## Related Microservices
-A separate microservice is used for daily balance deposits:  
-[Daily Balance Deposit Microservice](https://github.com/IUDA194/cash_plan_deposit)
+- **Database**: PostgreSQL
+- **Containerization**: Docker
+- **Orchestration**: Kubernetes
 
 ## Project Links
 - Main Project: [Money Manager](https://cash-planner.sitera.tech)
-- Backend: [Money Manager Backend](https://back-cash-planner.sitera.tech)
 
 ## Changelog
 
 ### Version 1.0.0
-- Project initialization
-
-## TODO
+- Initial release
