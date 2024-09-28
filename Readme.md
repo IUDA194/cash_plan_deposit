@@ -18,6 +18,8 @@ This microservice is designed to handle the daily balance deposit functionality 
 ## Project Links
 - Main Project: [Money Manager](https://cash-planner.sitera.tech)
 
+- Backend Repo: [Money Manager](https://github.com/IUDA194/cash_plan_back)
+
 ## Changelog
 
 ### Version 1.0.0
