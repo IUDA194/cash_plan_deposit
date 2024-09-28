@@ -28,17 +28,6 @@ pipeline {
             }
         }
 
-        stage('Deploy to Kubernetes') {
-            steps {
-                script {
-                    // Выполнение команды для перезапуска Deployment в Kubernetes
-                    sh '''
-                    export KUBECONFIG=${KUBECONFIG}
-                    kubectl rollout restart deployment/sicst-back
-                    '''
-                }
-            }
-        }
     }
 
     post {
